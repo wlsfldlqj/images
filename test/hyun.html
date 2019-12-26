@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom-modal.css">
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button id="modal-trigger" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#popup_withdrawal_write">
+      입금 등록
+    </button>
+    <!-- Modal(입금 내역 등록) -->
+    <div class="modal fade" id="popup_withdrawal_write" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">입금 내역 등록</p>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p class="comment-required">*표시가 있는 경우 필수입력사항입니다. 반드시 값을 입력해주세요.</p>
+                        <!-- 기본 입력 -->
+                        <div class="container" style="padding-left: 0px;">
+                            <div class="row">
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">등록매장*</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                    <select class="custom-select" id="inlineFormCustomSelect" width="180px;">
+                                        <option selected>선택</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">등록일*</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                    <input type="date" class="form-control" style="width: 100%; display: inline-block; text-align-last: end;"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">통장구분*</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                        <input type="text" class="form-control" placeholder="통장구분" style="width: 100%; display: inline-block;"/>
+                                </div>
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">계정구분*</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                    <input type="text" class="form-control" placeholder="계정구분" style="width: 100%; display: inline-block;"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">거래처명*</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="input-buyer" placeholder="거래처명">
+                                        <div class="input-group-append bg-white">
+                                            <button class="btn btn-outline-secondary btn-xs" type="button" style="height: 28px;">
+                                                <i class="fa fa-search" style="font-size: 13px; position: relative; top: 10%;"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md form-element form-label">
+                                    <span class="content-label">거래영수증</span>
+                                </div>
+                                <div class="col-md-4 form-element">
+                                    <input type="text" class="form-control" placeholder="거래영수증 미입력시 자동생성" style="width: 100%; display: inline-block;"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md form-label">
+                                    <span class="content-label">비고</span>
+                                </div>
+                                <div class="col-md-10" style="padding-right: 0px; padding-left: 0px; ">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="widows: 100%;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer-20"></div>
+                        <!-- 결제 내역 -->
+                        <div class="container" style="padding-left: 0px;">
+                            <div class="row justify-content-between">
+                                <div class="col container" style="">
+                                    <div class="row">
+                                        <div class="form-label" style="text-align: left; padding-left: 4px; margin-bottom: 6px; height: 28px; width: 84px; margin-left: 0px;">
+                                            <span class="content-label">금 결제내역*</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md container" style="border-right: 1px solid #f0edea; text-align: center; margin: 0px; padding:0px;">
+                                            <div class="col" style="background-color: #ffd8a2;"><span class="content-label">함량</span></div>
+                                            <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                                    <input type="text" class="form-control input-number" value="24" style="width:108px; display: inline;"/> K
+                                                </div>
+                                                <div class="col" style="background-color: #fdfdfd; height: 19px;"></div>
+                                        </div>
+                                        <div class="col-md container" style="text-align: center; margin: 0px; padding:0px;">
+                                            <div class="col" style="background-color: #ffd8a2;"><span class="content-label">중량</span></div>
+                                            <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                                <input type="text" class="form-control input-number" value="0.0" style="width: 108px; display: inline;"/> g
+                                            </div>
+                                            <div class="col" style="text-align: left; background-color: #f0edea;">
+                                                <span>순금 환산</span>
+                                                <span style="float: right"> 0g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col container">
+                                    <div class="row">
+                                        <div class="form-label" style="text-align: left;margin-bottom: 6px; height: 28px; width: 84px; margin-left: 0px;">
+                                            <span class="content-label">현금 결제내역*</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md container" style="border-right: 1px solid #f0edea; text-align: center; margin: 0px; padding:0px;">
+                                            <div class="col" style="background-color: #ffd8a2;"><span class="content-label">수량</span></div>
+                                            <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                                <input type="text" class="form-control input-number" value="0" style="width: 108px; display: inline;"/> 개
+                                            </div>
+                                            <div class="col" style="background-color: #fdfdfd; height: 19px;"></div>
+                                        </div>
+                                        <div class="col-md container" style="text-align: center; margin: 0px; padding:0px;">
+                                            <div class="col" style="background-color: #ffd8a2;"><span class="content-label">단가</span></div>
+                                            <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                                <input type="text" class="form-control input-number" value="0" style="width: 108px; display: inline;"/> 원
+                                            </div>
+                                            <div class="col" style="background-color: #fdfdfd; height: 19px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer-20"></div>
+                        <!-- 결제 내역 -->
+                        <div class="container" style="padding-left: 10px;">
+                            <div class="row">
+                                <div class="form-label" style="text-align: left; padding-left: 4px; margin-bottom: 6px; height: 28px; width: 84px; margin-left: 0px;">
+                                    <span class="content-label">총 거래 합산</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md container" style="border-right: 1px solid #f0edea; text-align: center; margin: 0px; padding:0px;">
+                                    <div class="col" style="background-color: #ffd8a2;"><span class="content-label">공급가</span></div>
+                                    <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                        <input type="text" class="form-control input-number" value="0" disabled style="width: 108px; display: inline;"/> 원
+                                    </div>
+                                </div>
+                                <div class="col-md container" style="border-right: 1px solid #f0edea; text-align: center; margin: 0px; padding:0px;">
+                                    <div class="col" style="background-color: #ffd8a2;"><span class="content-label">세율</span></div>
+                                    <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                        <select class="custom-select" id="select_vat" width="100%">
+                                            <option selected>선택</option>
+                                            <option value="0">0%</option>
+                                            <option value="10">10%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md container" style="text-align: center; margin: 0px; padding:0px;">
+                                    <div class="col" style="background-color: #ffd8a2;"><span class="content-label">합계금액</span></div>
+                                    <div class="col" style="background-color: #fdfdfd; line-height: 40px;">
+                                        <input type="text" class="form-control input-number" value="0" style="width: 108px; display: inline;"/> 원
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-cancel" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-md btn-confirm">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

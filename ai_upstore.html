@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Fluid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+.center {
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+</style>
+</head>
+<body width="100%" height="100%" bgcolor="#e0e0e0" style="margin: 0;" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;">
+  <tr>
+    <td><center style="width: 100%;">
+        
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif; background-color: #ffffff"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+        <!-- Visually Hidden Preheader Text : END -->
+        
+        <div style="max-width: 600px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+            <tr>
+              <td style="padding: 20px 0; text-align: center;" bgcolor=#ffffff><img src="https://raw.githubusercontent.com/wlsfldlqj/images/master/images/upstore_logo.png" width="200" height="50" alt="alt_text" border="0"></td>
+              
+                
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px; color:#ffffff;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+              <td class="full-width-image" align="center" ><img src="https://raw.githubusercontent.com/wlsfldlqj/images/master/images/ai-and-dev.jpg" width="600" alt="alt_text" border="0" style="width: 300%; max-width: 600px; height: 300px;"></td>
+            </tr>
+                <tr style="color: #ffffff; height: 200px;" bgcolor=#ffffff><tr><header><storng>국내 유일, 국내 최초 빅데이터와 인공지능 기반 국제 금 예측 서비스 </storng></header>
+              </tr></tr>
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: center;"> <strong>국내 최초 미국 공공빅데이터 뉴욕타임즈 30년치 금 관련 데이터를 수집 분석하여 <br>
+                      금과의 상관관계성을 분석결과<br>
+                    </strong> 상관관계가 높은 요인 10가지 요인 수치 데이터를 가져와 인공지능 알고리즘을 학습시켰습니다.<br>
+한달 치의 높은 예측성을 갖고 있습니다.<br>
+                      매일 최신의 데이터를 항상 수집하고 <strong>인공지능 예측 모델로 예측시세</strong>를 보여주는 <strong>업스토어</strong>를 다운로드 받으세요.&nbsp;<br>
+                      <br>
+                      <br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                      
+                      <!-- Button : Begin -->
+                      
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="https://play.google.com/store/apps/details?src=AppAgg.com&id=com.keumbang.upstoregoldprice&referrer=utm_source%3DAppAgg.com%26utm_medium%3DAppAgg%26utm_campaign%3DAppAgg" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                            &nbsp;무료 서비스 기간 얼마 안남았습니다. 서둘러 다운로드 받으세요</a></td>
+                            
+                        </tr><tr><img src = "https://raw.githubusercontent.com/wlsfldlqj/images/master/images/Googleplay.jpeg" width="100px"><p>구글 플레이 스토어에서 "업스토어"를 검색해 보세요!</p>
+                            </tr>
+                      </table>
+                      
+                      <!-- Button : END --> 
+                      <r>
+                
+&nbsp; </td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                  <tr><td></img></td></tr>
+                </table></td>
+            </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+              <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+                        <tr>
+                        <td align="center" valign="top" width="560">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 10px 30px 10px;"><!--[if mso]>
+                         <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                            <tr>
+                               <td align="left" valign="top" width="280">
+                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="https://raw.githubusercontent.com/wlsfldlqj/images/master/images/dome.png" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"> <strong> 쥬얼리 종사자</strong>들을 위한 실시간 종로 도매 금시세 공시 어플&nbsp;&nbsp; </td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="280">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="https://raw.githubusercontent.com/wlsfldlqj/images/master/images/ai.png" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"> 쥬얼리 종사자들만&nbsp; 위한 국내 유일 , <strong>국내 최, 유일&nbsp; AI 국제 금 예측 서비스&nbsp; </strong></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Two Even Columns : END -->
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">View as a Web Page</webversion>
+                <br>
+                <br>
+                Company Name<br>
+                <span class="mobile-link--footer">Adobe Systems Incorporated, 345 Park Avenue</span> <br>
+                <br>
+                <unsubscribe style="color:#888888; text-decoration:underline;">unsubscribe</unsubscribe></td>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>
